@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="post type-system-rounded">
+    <h1>{{ page.title }}</h1>
+    <p class="date">{{ page.date | date_to_long_string }}</p>
+    <div class="body">
+        {{ content }}
+    </div>
+    <div class="nav">
+        <div class="prev">
+        {% if page.previous.url %}
+            <a href="{{page.previous.url}}"><i class="fa fa-arrow-left"></i> {{page.previous.title}}</a>
+        {% endif %}
+            &nbsp;
+        </div>
+        <div class="next">
+        {% if page.next.url %}
+            <a href="{{page.next.url}}">{{page.next.title}} <i class="fa fa-arrow-right"></i></a>
+        {% endif %}
+        </div>
+    </div>
+</div>
