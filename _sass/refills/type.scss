@@ -21,6 +21,11 @@ article.type-system-rounded {
     margin: 0;
   }
 
+  ul {
+    list-style-type: disc;
+    margin-left: 1.6em;
+  }
+
   hr {
     border-bottom: 1px solid $light-gray;
     border-left: 0;
@@ -73,15 +78,16 @@ article.type-system-rounded {
     }
   }
 
-  code {
+  div.highlighter-rouge {
     background: #ffffec;
     border-radius: $base-border-radius * 1.5;
     border: 1px solid #E0E0E0;
-    font-family: monaco;
-    font-size: 0.7em;
+    // font-family: monaco;
+    font-size: 0.8em;
     font-style: normal;
     padding: 0.1em 0.4em;
-    white-space: nowrap;
+    // white-space: nowrap;
+    margin-bottom: 1.5em;
   }
 
 
@@ -91,6 +97,7 @@ article.type-system-rounded {
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: 0.4em;
+    margin-top: 1.3em;
   }
 
   p.date {
@@ -137,6 +144,10 @@ article.type-system-rounded {
 
   p.author {
     font-family: $sans-serif;
+  }
+
+  strong {
+    font-weight: 600;
   }
 }
 

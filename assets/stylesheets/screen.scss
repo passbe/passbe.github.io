@@ -5,6 +5,7 @@
 @import "neat/neat";
 @import "bitters/base";
 @import "refills/type";
+@import "syntax";
 
 $background-color: #F8F8F8;
 $sidebar-base-font-color: #FFFFFF;
@@ -84,7 +85,7 @@ div#container {
             margin-bottom:0px;
         }
         div.body {
-            margin:$gutter 0;
+            margin:$gutter 0 $gutter * 3 0;
         }
         div.nav {
             margin-bottom:$gutter;
