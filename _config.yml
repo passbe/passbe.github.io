@@ -14,11 +14,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: passbe.com
-name: Ben Passmore
-bio: "Incident response, coder and hacking all the things. Everything security."
+author: Ben Passmore
+description: "Incident response, coder and hacking all the things. Everything security."
 email: contact@passbe.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://passbe.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter:
+  username: passbe
+logo: /assets/images/profile.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/profile.png
 
 # Build settings
 markdown: kramdown
@@ -28,6 +36,7 @@ kramdown:
 gems:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
