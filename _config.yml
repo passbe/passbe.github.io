@@ -27,6 +27,7 @@ kramdown:
     input: GFM
 gems:
   - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
